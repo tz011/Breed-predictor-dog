@@ -39,7 +39,8 @@ st.markdown("<h1 style='text-align: center;'>🐾 Guess That Dog Breed! 🐾</h1
 st.markdown("<p style='text-align: center;'>Upload a dog photo and let AI guess the breed!</p>", unsafe_allow_html=True)
 
 # --------------------- LOAD MODEL ---------------------
-model = tf.keras.models.load_model("dog_breed_model.h5")
+model = tf.keras.models.load_model("dog_breed_model.keras")
+
 class_names = sorted(os.listdir("Images"))  # <-- Corrected folder name here
 
 # --------------------- PREDICTION FUNCTION ---------------------
